@@ -1,0 +1,140 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  background: hsl(228, 99%, 58%);
+  color: hsl(0, 0%, 100%);
+  font-family: "Inter", sans-serif;
+  margin: 0;
+}
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  width:100%;
+  padding: 10px 30px 0px;
+  height: 10%;
+}
+header img{
+  display: block;
+  vertical-align: center;
+  height: fit-content;
+  padding-top: 16px ;
+}
+header p{
+  position: relative;
+  height: fit-content;
+}
+header p:after{
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: hsl(0, 0%, 100%);
+  position: absolute;
+  left: -15px;
+  top: 3px;
+}
+.content{
+  height: 80%;
+  width: 41%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: 1px solid  hsl(220, 100%, 64%);
+  border-top: solid 1px hsl(220, 100%, 64%);
+  padding-left: 30px;
+}
+.content p{
+  width: 300px;
+  font-size: 14px;
+}
+.content h1{
+  width: 320px;
+  height: 78px;
+  font-size: 45px;
+  font-weight: bold;
+  margin-bottom: 50px;
+  margin-top: 0;
+}
+nav{
+  height: 80%;
+  width: 59%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-bottom: 1px solid  hsl(220, 100%, 64%);
+}
+nav div{
+  width: 50%;
+  border-left: 1px solid  hsl(220, 100%, 64%);
+  border-top: solid 1px hsl(220, 100%, 64%);
+}
+nav figure{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  height: 100%;
+  padding: 10px;
+}
+nav figure figcaption{
+  width:100%;
+  align-self: flex-end;
+  font-size: 14px;
+}
+nav figure h1{
+  margin: 0;
+  height: fit-content;
+}
+nav figure img{
+  height: fit-content;
+}
+footer{
+  height: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+@media (min-width:175px) and (max-width:1169px){
+  header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 10%;
+}
+.container {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  height: 100vh;
+}
+.content {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid hsl(220, 100%, 64%);
+  border-top: solid 1px hsl(220, 100%, 64%);
+  padding-left: 30px;
+}
+nav {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  border-bottom: none;
+}
+nav div {
+  width: 100%;
+  border-left: none;
+  border-top: none;
+  border-bottom: 1px solid hsl(220, 100%, 64%);
+}
+}
