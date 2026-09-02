@@ -78,7 +78,7 @@ aside div{
   width: 50%;
   border-left: 1px solid  var(--border);
 }
-aside .page1,aside .page2{
+aside .page1, aside .page2{
   border-bottom: 1px solid  var(--border);
 }
 aside figure{
@@ -107,12 +107,9 @@ footer{
 }
 @media (min-width:175px) and (max-width:1169px){
   header {
-  display: flex;
-  justify-content: space-between;
   width: 100%;
 }
 .container {
-  display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
   min-height: 100vh;
@@ -123,34 +120,23 @@ section {
   flex-direction: column;
   border-bottom: none;
   border-top: solid 1px var(--border);
-  padding-left: 30px;
-  flex-grow: 1;
-}
+  padding-left: 30px;}
 section h1{
-  font-size: 2rem;
-}
+  font-size: 2rem;}
 aside {
   width: 100%;
-  display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
-  border-bottom: none;
-  flex-grow: 1;
-}
+  border-bottom: none;}
 aside div {
-  flex-grow: 1;
   height: 50%;
   width: 100%;
   border-left: none;
   border-top: none;
-  border-bottom: 1px solid hsl(220, 100%, 64%);
-}
+  border-bottom: 1px solid hsl(220, 100%, 64%);}
 footer{
 width: 100%;
-display: flex;
-justify-content: flex-end;
 margin-top: 25px;
 padding: 20px;
-
-}
+ }
 }
